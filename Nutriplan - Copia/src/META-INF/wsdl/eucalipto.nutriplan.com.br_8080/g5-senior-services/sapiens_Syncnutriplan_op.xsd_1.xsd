@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://services.senior.com.br" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services.senior.com.br">
+
+<xs:complexType name="opEmpresaOPIn">
+<xs:sequence>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opEmpresaOPOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opEmpresaOPOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opEmpresaOPOutConsultar">
+<xs:sequence>
+<xs:element name="codEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="desEmp" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opFichaTecnicaIn">
+<xs:sequence>
+<xs:element name="codDer" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codPro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opFichaTecnicaOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opFichaTecnicaOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opFichaTecnicaOutConsultar">
+<xs:sequence>
+<xs:element name="codCmp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="derCmp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="desCmp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="desDer" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="prdQtd" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdTot" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdUti" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="seqMod" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="statusRegistro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="tipPro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="uniMe2" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opMotivoParadaIn">
+<xs:sequence>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opMotivoParadaOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opMotivoParadaOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opMotivoParadaOutConsultar">
+<xs:sequence>
+<xs:element name="codAmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="codMtv" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="desAmp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="desMtv" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="statusRegistro" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opListaExportadoIn">
+<xs:sequence>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opListaExportadoOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opListaExportadoOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opListaExportadoOutConsultar">
+<xs:sequence>
+<xs:element name="desExp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="expErp" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opApontamentoProducaoIn">
+<xs:sequence>
+<xs:element name="apontar" type="tns:opApontamentoProducaoInApontar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opApontamentoProducaoInApontar">
+<xs:sequence>
+<xs:element name="codCcu" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codCre" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="codDer" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codDft" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codDiv" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codEsp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codEtg" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="codLot" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codMtv" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codOri" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codPro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codRef" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="datMov" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="horMov" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="indDiv" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="iniFim" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="numCad" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="numOrp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="numSep" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="qtdIql" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdRe1" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdRe2" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdRe3" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdRfg" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="seqRot" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="sequenciaMovimento" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="tipOpr" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="turTrb" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opApontamentoProducaoOut">
+<xs:sequence>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="respostaApontar" type="tns:opApontamentoProducaoOutRespostaApontar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opApontamentoProducaoOutRespostaApontar">
+<xs:sequence>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="sequenciaMovimento" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opOperadorIn">
+<xs:sequence>
+<xs:element name="codCre" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opOperadorOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opOperadorOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opOperadorOutConsultar">
+<xs:sequence>
+<xs:element name="codEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="nomOpe" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="numCad" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="statusRegistro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="turTrb" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opPrioridadeCentroDeRecursoIn">
+<xs:sequence>
+<xs:element name="codCre" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="datPrg" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="turTrb" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opPrioridadeCentroDeRecursoOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opPrioridadeCentroDeRecursoOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opPrioridadeCentroDeRecursoOutConsultar">
+<xs:sequence>
+<xs:element name="seqPri" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="tipoRetorno" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opApontamentoParadaIn">
+<xs:sequence>
+<xs:element name="apontar" type="tns:opApontamentoParadaInApontar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opApontamentoParadaInApontar">
+<xs:sequence>
+<xs:element name="codCcu" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codCre" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="codDer" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codDft" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codDiv" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codEsp" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codEtg" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="codLot" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codMtv" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codOri" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codPro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codRef" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="datMov" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="horMov" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="indDiv" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="iniFim" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="numCad" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="numOrp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="numSep" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="qtdIql" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdRe1" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdRe2" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdRe3" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdRfg" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="seqRot" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="sequenciaMovimento" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="tipOpr" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="turTrb" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opApontamentoParadaOut">
+<xs:sequence>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="respostaApontar" type="tns:opApontamentoParadaOutRespostaApontar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opApontamentoParadaOutRespostaApontar">
+<xs:sequence>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="sequenciaMovimento" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opCentroDeRecursoIn">
+<xs:sequence>
+<xs:element name="definirCentroDeRecurso" type="tns:opCentroDeRecursoInDefinirCentroDeRecurso" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opCentroDeRecursoInDefinirCentroDeRecurso">
+<xs:sequence>
+<xs:element name="codCre" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="enderecoIP" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opCentroDeRecursoOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opCentroDeRecursoOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opCentroDeRecursoOutConsultar">
+<xs:sequence>
+<xs:element name="codCre" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="codEtg" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="desCre" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="statusRegistro" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opDefeitoFabricacaoIn">
+<xs:sequence>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opDefeitoFabricacaoOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opDefeitoFabricacaoOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opDefeitoFabricacaoOutConsultar">
+<xs:sequence>
+<xs:element name="codDft" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="desDft" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="statusRegistro" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opOrdemProducaoIn">
+<xs:sequence>
+<xs:element name="codCre" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opOrdemProducaoOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opOrdemProducaoOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opOrdemProducaoOutConsultar">
+<xs:sequence>
+<xs:element name="capSmt" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="cicPad" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="codDer" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="codEtg" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="codOri" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codPro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="desDer" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="desEtg" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="desPro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="desPrxDer" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="desPrxPro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="numOrp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="numPri" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="pesPad" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="prxDer" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="prxPro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="qtdMax" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdPrv" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="qtdRfg" type="xs:double" nillable="true" minOccurs="0"/>
+<xs:element name="seqRot" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="sfxEtr" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="statusRegistro" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opTurnoDeTrabalhoXHorariosIn">
+<xs:sequence>
+<xs:element name="codCre" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opTurnoDeTrabalhoXHorariosOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opTurnoDeTrabalhoXHorariosOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opTurnoDeTrabalhoXHorariosOutConsultar">
+<xs:sequence>
+<xs:element name="codCre" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="codEmp" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="codEtg" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="horFim" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="horIni" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="seqHtr" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="statusRegistro" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="tipHtr" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="turTrb" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opListaTurnoIn">
+<xs:sequence>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opListaTurnoOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opListaTurnoOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opListaTurnoOutConsultar">
+<xs:sequence>
+<xs:element name="desTrb" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="turTrb" type="xs:int" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opUsuarioIn">
+<xs:sequence>
+<xs:element name="flowInstanceID" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="flowName" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opUsuarioOut">
+<xs:sequence>
+<xs:element name="consultar" type="tns:opUsuarioOutConsultar" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="erroExecucao" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="opUsuarioOutConsultar">
+<xs:sequence>
+<xs:element name="codUsu" type="xs:int" nillable="true" minOccurs="0"/>
+<xs:element name="intNet" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="mensagemRetorno" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="nomUsu" type="xs:string" nillable="true" minOccurs="0"/>
+<xs:element name="statusRegistro" type="xs:string" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
