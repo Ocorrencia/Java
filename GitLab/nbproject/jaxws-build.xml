@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-sapiens_Syncnutriplan_op" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/sapiens_Syncnutriplan_op"/>
+        <property name="wsdl-sapiens_Syncnutriplan_op" location="xml-resources/web-service-references/sapiens_Syncnutriplan_op/wsdl/eucalipto.nutriplan.com.br_8080/g5-senior-services/sapiens_Syncnutriplan_op.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/sapiens_Syncnutriplan_op" destdir="${build.generated.dir}/jax-wsCache/sapiens_Syncnutriplan_op" wsdl="${wsdl-sapiens_Syncnutriplan_op}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://eucalipto.nutriplan.com.br:8080/g5-senior-services/sapiens_Syncnutriplan_op?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-sapiens_Syncnutriplan_op}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/sapiens_Syncnutriplan_op"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/sapiens_Syncnutriplan_op">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-sapiens_Syncnutriplan_op" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/sapiens_Syncnutriplan_op"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/br/com/senior/services"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-sapiens_Syncnutriplan_op"/>
+</project>

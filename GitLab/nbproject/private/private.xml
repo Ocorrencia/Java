@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/build/generated-sources/jax-ws/br/com/senior/services/OpApontamentoProducaoOut.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaApontamentoParada.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/OrdemProducaoWebService.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaAtualizacao.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaAvisoInicioProducao.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaSistema.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaMaquina.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaMenu.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaConfig.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/Maquina.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/Operador.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/TurnoTrabalhoWebService.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/OrdemProducao.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/Defeito.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaCadastro.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/FichaTecnica.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/TurnoTrabalho.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/FichaTecnicaWebService.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaAvisoTravamento.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/Eventos.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/util/Teste.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaBotaoRefugo.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TecladoVirtual.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/Refugo.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/PrioridadeMaquinaWebService.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/ParadaRecurso.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/ConfiguracaoBanco.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/ControleOperacao.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaFichaTecnica.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/build/generated-sources/jax-ws/br/com/senior/services/OpApontamentoProducaoInApontar.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/Turno.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaRefugo.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/Motivo.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/TurnoWebService.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/MovimentoOrdemProducaoWebService.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaLoading.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/DefeitoWebService.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/CentroRecurso.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/MotivoParadaWebService.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/MeuJDesktopPane.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/MovimentoOrdemProducao.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/Registro.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojo/Empresa.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/tela/TelaOP.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/CentroRecursoWebService.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/ApontamentoParadaWebService.java</file>
+            <file>file:/C:/Projetos_Desenvolvimento/IntegraçãoJava/GitLab/src/pojoWebService/OperadorWebService.java</file>
+        </group>
+    </open-files>
+</project-private>
