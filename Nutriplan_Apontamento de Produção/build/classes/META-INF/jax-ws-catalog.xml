@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://eucalipto.nutriplan.com.br:8080/g5-senior-services/sapiens_Syncnutriplan_op?wsdl" uri="wsdl/eucalipto.nutriplan.com.br_8080/g5-senior-services/sapiens_Syncnutriplan_op.wsdl"/>
+    <system systemId="http://eucalipto.nutriplan.com.br:8080/g5-senior-services/sapiens_Syncnutriplan_op?xsd=1" uri="wsdl/eucalipto.nutriplan.com.br_8080/g5-senior-services/sapiens_Syncnutriplan_op.xsd_1.xsd"/>
+</catalog>
